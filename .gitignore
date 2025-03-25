@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CodeStixSolution
+/CodeStixSolution/bin
+/CodeStixSolution/obj/Debug
+/UpgradeLog.htm
+/UpgradeLog2.htm
+/UpgradeLog3.htm

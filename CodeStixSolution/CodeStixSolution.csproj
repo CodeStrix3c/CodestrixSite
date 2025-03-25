@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{076BC989-D1F5-475C-969F-54AB4353CF0E}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeStixSolution</RootNamespace>
+    <AssemblyName>CodeStixSolution</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAL\GeneralBTO.cs" />
+    <Compile Include="DAL\MailHelper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GeneralModol.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="assets\css\plugins\all.min.css" />
+    <Content Include="assets\css\plugins\aos.css" />
+    <Content Include="assets\css\plugins\bootstrap.min.css" />
+    <Content Include="assets\css\plugins\flaticon.css" />
+    <Content Include="assets\css\plugins\magnific-popup.css" />
+    <Content Include="assets\css\plugins\swiper-bundle.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\style.min.css" />
+    <Content Include="assets\fonts\fa-brands-400.svg" />
+    <Content Include="assets\fonts\fa-regular-400.svg" />
+    <Content Include="assets\fonts\fa-solid-900.svg" />
+    <Content Include="assets\fonts\flaticon.svg" />
+    <Content Include="assets\images\ab-shape.png" />
+    <Content Include="assets\images\about-1.jpg" />
+    <Content Include="assets\images\about-2-shape.jpg" />
+    <Content Include="assets\images\about-2.jpg" />
+    <Content Include="assets\images\about-3.jpg" />
+    <Content Include="assets\images\about-sm-5.jpg" />
+    <Content Include="assets\images\about\about-4.jpg" />
+    <Content Include="assets\images\about\about-5.jpg" />
+    <Content Include="assets\images\about\about-6.jpg" />
+    <Content Include="assets\images\about\shape-2.png" />
+    <Content Include="assets\images\author-1.jpg" />
+    <Content Include="assets\images\author-2.jpg" />
+    <Content Include="assets\images\author-3.jpg" />
+    <Content Include="assets\images\author-4.jpg" />
+    <Content Include="assets\images\banner.png" />
+    <Content Include="assets\images\bg\ab-contact.jpg" />
+    <Content Include="assets\images\bg\about-2-bg.jpg" />
+    <Content Include="assets\images\bg\c-study-bg.jpg" />
+    <Content Include="assets\images\bg\contact-bg.jpg" />
+    <Content Include="assets\images\bg\counter-2-bg.jpg" />
+    <Content Include="assets\images\bg\counter-bg-3.jpg" />
+    <Content Include="assets\images\bg\counter-bg.jpg" />
+    <Content Include="assets\images\bg\cta-2-bg.jpg" />
+    <Content Include="assets\images\bg\cta-4-bg.jpg" />
+    <Content Include="assets\images\bg\cta-5.jpg" />
+    <Content Include="assets\images\bg\cta-bg.jpg" />
+    <Content Include="assets\images\bg\features-4-bg.jpg" />
+    <Content Include="assets\images\bg\features-6-bg.jpg" />
+    <Content Include="assets\images\bg\features-bg.jpg" />
+    <Content Include="assets\images\bg\footer-bg-2.jpg" />
+    <Content Include="assets\images\bg\footer-bg-3.jpg" />
+    <Content Include="assets\images\bg\footer-bg.jpg" />
+    <Content Include="assets\images\bg\hero-4-bg.jpg" />
+    <Content Include="assets\images\bg\hero-6-bg.jpg" />
+    <Content Include="assets\images\bg\pricing-bg.jpg" />
+    <Content Include="assets\images\bg\ser-2-bg.png" />
+    <Content Include="assets\images\bg\ser-3-bg.jpg" />
+    <Content Include="assets\images\bg\skill-bg-2.jpg" />
+    <Content Include="assets\images\bg\skill-bg.jpg" />
+    <Content Include="assets\images\bg\subscribe-bg.jpg" />
+    <Content Include="assets\images\bg\testi-bg-5.png" />
+    <Content Include="assets\images\bg\testi-bg.jpg" />
+    <Content Include="assets\images\blog\author-1.jpg" />
+    <Content Include="assets\images\blog\author-2.jpg" />
+    <Content Include="assets\images\blog\blog-1.jpg" />
+    <Content Include="assets\images\blog\blog-2.jpg" />
+    <Content Include="assets\images\blog\blog-3.jpg" />
+    <Content Include="assets\images\blog\blog-4.jpg" />
+    <Content Include="assets\images\blog\blog-5.jpg" />
+    <Content Include="assets\images\blog\blog-6.jpg" />
+    <Content Include="assets\images\blog\blog-7.jpg" />
+    <Content Include="assets\images\blog\blog-8.jpg" />
+    <Content Include="assets\images\blog\blog-9.jpg" />
+    <Content Include="assets\images\blog\blog-s-1.jpg" />
+    <Content Include="assets\images\blog\blog-s-2.jpg" />
+    <Content Include="assets\images\blog\blog-s-3.jpg" />
+    <Content Include="assets\images\blog\l-blog-1.jpg" />
+    <Content Include="assets\images\blog\l-blog-2.jpg" />
+    <Content Include="assets\images\blog\l-blog-3.jpg" />
+    <Content Include="assets\images\blog\p-post-1.jpg" />
+    <Content Include="assets\images\blog\r-post-1.jpg" />
+    <Content Include="assets\images\blog\r-post-2.jpg" />
+    <Content Include="assets\images\blog\r-post-3.jpg" />
+    <Content Include="assets\images\brand\brand-1.png" />
+    <Content Include="assets\images\brand\brand-2.png" />
+    <Content Include="assets\images\brand\brand-3.png" />
+    <Content Include="assets\images\brand\brand-4.png" />
+    <Content Include="assets\images\brand\brand-5.png" />
+    <Content Include="assets\images\c-study-1.jpg" />
+    <Content Include="assets\images\c-study-2.jpg" />
+    <Content Include="assets\images\c-study-3.jpg" />
+    <Content Include="assets\images\c-study-4.jpg" />
+    <Content Include="assets\images\c-study-5.jpg" />
+    <Content Include="assets\images\c-study-6.jpg" />
+    <Content Include="assets\images\counter\counter-1.png" />
+    <Content Include="assets\images\counter\counter-2.png" />
+    <Content Include="assets\images\counter\counter-3.png" />
+    <Content Include="assets\images\counter\counter-4.png" />
+    <Content Include="assets\images\counter\counter-5.png" />
+    <Content Include="assets\images\counter\counter-6.png" />
+    <Content Include="assets\images\counter\counter-7.png" />
+    <Content Include="assets\images\counter\counter-8.png" />
+    <Content Include="assets\images\cta-icon.png" />
+    <Content Include="assets\images\faq-1.png" />
+    <Content Include="assets\images\favicon.png" />
+    <Content Include="assets\images\fear-2.png" />
+    <Content Include="assets\images\fear-3.png" />
+    <Content Include="assets\images\fear-4.png" />
+    <Content Include="assets\images\fear-5.png" />
+    <Content Include="assets\images\fear-6.png" />
+    <Content Include="assets\images\features-1.png" />
+    <Content Include="assets\images\features-10.png" />
+    <Content Include="assets\images\features-11.png" />
+    <Content Include="assets\images\features-12.png" />
+    <Content Include="assets\images\features-2.png" />
+    <Content Include="assets\images\features-3.png" />
+    <Content Include="assets\images\features-4.png" />
+    <Content Include="assets\images\features-5.png" />
+    <Content Include="assets\images\features-6.png" />
+    <Content Include="assets\images\features-7.png" />
+    <Content Include="assets\images\features-8.png" />
+    <Content Include="assets\images\features-9.png" />
+    <Content Include="assets\images\features-img-2.jpg" />
+    <Content Include="assets\images\features-img-3.jpg" />
+    <Content Include="assets\images\features-img.png" />
+    <Content Include="assets\images\features-shape.png" />
+    <Content Include="assets\images\fer-1.png" />
+    <Content Include="assets\images\hero-1.jpg" />
+    <Content Include="assets\images\hero-2.jpg" />
+    <Content Include="assets\images\hero-3.jpg" />
+    <Content Include="assets\images\hero-4.png" />
+    <Content Include="assets\images\hero-5-shape-2.png" />
+    <Content Include="assets\images\hero-5-shape.png" />
+    <Content Include="assets\images\hero-5.jpg" />
+    <Content Include="assets\images\hero-6.png" />
+    <Content Include="assets\images\hero-shape-4.png" />
+    <Content Include="assets\images\hero7\about-big1.jpg" />
+    <Content Include="assets\images\hero7\about-sm1.jpg" />
+    <Content Include="assets\images\hero7\cta-bg.jpg" />
+    <Content Include="assets\images\hero7\faq-bg.jpg" />
+    <Content Include="assets\images\hero7\footer7-bg.jpg" />
+    <Content Include="assets\images\hero7\hero-img7.jpg" />
+    <Content Include="assets\images\hero7\hero7-img1.jpg" />
+    <Content Include="assets\images\hero7\hero7-shape1.png" />
+    <Content Include="assets\images\hero7\ser-bg2.jpg" />
+    <Content Include="assets\images\hero7\service-bg7.jpg" />
+    <Content Include="assets\images\home10\brand-1.png" />
+    <Content Include="assets\images\home10\brand-2.png" />
+    <Content Include="assets\images\home10\brand-3.png" />
+    <Content Include="assets\images\home10\brand-4.png" />
+    <Content Include="assets\images\home10\brand-5.png" />
+    <Content Include="assets\images\home10\brand-6.png" />
+    <Content Include="assets\images\home10\contact-bg.jpg" />
+    <Content Include="assets\images\home10\feat-bg.jpg" />
+    <Content Include="assets\images\home10\hero-bg10.png" />
+    <Content Include="assets\images\home10\hero-img10.png" />
+    <Content Include="assets\images\home10\over-bg-sh1.png" />
+    <Content Include="assets\images\home10\over-bg-sh2.png" />
+    <Content Include="assets\images\home10\over-img1.png" />
+    <Content Include="assets\images\home10\over-img2.png" />
+    <Content Include="assets\images\home10\over-shape1.png" />
+    <Content Include="assets\images\home10\ser-icon1.png" />
+    <Content Include="assets\images\home10\ser-icon2.png" />
+    <Content Include="assets\images\home10\ser-icon3.png" />
+    <Content Include="assets\images\home10\ser-shape1.png" />
+    <Content Include="assets\images\home10\sh-1.png" />
+    <Content Include="assets\images\home10\sh-2.png" />
+    <Content Include="assets\images\home8\ab-shape1.png" />
+    <Content Include="assets\images\home8\about-2.jpg" />
+    <Content Include="assets\images\home8\about-img1.jpg" />
+    <Content Include="assets\images\home8\banner-bg.jpg" />
+    <Content Include="assets\images\home8\cs-1.jpg" />
+    <Content Include="assets\images\home8\cs-2.jpg" />
+    <Content Include="assets\images\home8\cs-3.jpg" />
+    <Content Include="assets\images\home8\cs-4.jpg" />
+    <Content Include="assets\images\home8\cta-bg8.jpg" />
+    <Content Include="assets\images\home8\feat-1.png" />
+    <Content Include="assets\images\home8\feat-2.png" />
+    <Content Include="assets\images\home8\feat-3.png" />
+    <Content Include="assets\images\home8\feat-4.png" />
+    <Content Include="assets\images\home8\hero8-bg.jpg" />
+    <Content Include="assets\images\home8\hero8-bg.png" />
+    <Content Include="assets\images\home8\hero8-img.png" />
+    <Content Include="assets\images\home8\hero8-shape1.png" />
+    <Content Include="assets\images\home8\hero8-shape2.png" />
+    <Content Include="assets\images\home8\hero8-shape3.png" />
+    <Content Include="assets\images\home8\hero8-shape4.png" />
+    <Content Include="assets\images\home8\hero8-shape5.png" />
+    <Content Include="assets\images\home8\hero8-shape6.png" />
+    <Content Include="assets\images\home8\testi-bg9.jpg" />
+    <Content Include="assets\images\home8\text-img.png" />
+    <Content Include="assets\images\home8\vdo-img.jpg" />
+    <Content Include="assets\images\home9\c-study-5.jpg" />
+    <Content Include="assets\images\home9\c-study-6.jpg" />
+    <Content Include="assets\images\home9\c-study-7.jpg" />
+    <Content Include="assets\images\home9\cta-icon.png" />
+    <Content Include="assets\images\home9\feat-bg9.jpg" />
+    <Content Include="assets\images\home9\hero-img9.png" />
+    <Content Include="assets\images\home9\hero9-bg.jpg" />
+    <Content Include="assets\images\home9\hero9-sh1.png" />
+    <Content Include="assets\images\home9\hero9-sh2.png" />
+    <Content Include="assets\images\home9\hero9-sh3.png" />
+    <Content Include="assets\images\home9\over-img1.png" />
+    <Content Include="assets\images\home9\over-img2.png" />
+    <Content Include="assets\images\home9\over-shape1.png" />
+    <Content Include="assets\images\home9\ser-icon1.png" />
+    <Content Include="assets\images\home9\testi-img10.png" />
+    <Content Include="assets\images\icons\select-arrow-down.html" />
+    <Content Include="assets\images\logo-2.png" />
+    <Content Include="assets\images\logo-orange.png" />
+    <Content Include="assets\images\logo-white.png" />
+    <Content Include="assets\images\logo.jpeg" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\overview-img-1.png" />
+    <Content Include="assets\images\overview-img-2.png" />
+    <Content Include="assets\images\overview-shape-2.png" />
+    <Content Include="assets\images\page-banner.jpg" />
+    <Content Include="assets\images\quote-2.png" />
+    <Content Include="assets\images\quote-3.png" />
+    <Content Include="assets\images\quote.png" />
+    <Content Include="assets\images\service\s-img-1.jpg" />
+    <Content Include="assets\images\service\s-img-2.jpg" />
+    <Content Include="assets\images\service\s-img-3.jpg" />
+    <Content Include="assets\images\service\s-img-4.jpg" />
+    <Content Include="assets\images\service\s-img-5.jpg" />
+    <Content Include="assets\images\service\s-shape-2.png" />
+    <Content Include="assets\images\service\service-1.png" />
+    <Content Include="assets\images\service\service-10.png" />
+    <Content Include="assets\images\service\service-2.png" />
+    <Content Include="assets\images\service\service-3.png" />
+    <Content Include="assets\images\service\service-4.png" />
+    <Content Include="assets\images\service\service-5.png" />
+    <Content Include="assets\images\service\service-6.png" />
+    <Content Include="assets\images\service\service-7.png" />
+    <Content Include="assets\images\service\service-8.png" />
+    <Content Include="assets\images\service\service-9.png" />
+    <Content Include="assets\images\shop-cart-1.jpg" />
+    <Content Include="assets\images\shop-cart-2.jpg" />
+    <Content Include="assets\images\shop-cart-3.jpg" />
+    <Content Include="assets\images\sign-2.png" />
+    <Content Include="assets\images\sign.png" />
+    <Content Include="assets\images\skill-img-2.jpg" />
+    <Content Include="assets\images\skill\skill-5.jpg" />
+    <Content Include="assets\images\skill\skill-6.jpg" />
+    <Content Include="assets\images\skill\skill-7.jpg" />
+    <Content Include="assets\images\skill\skill-img-1.jpg" />
+    <Content Include="assets\images\skill\skill-img-2.jpg" />
+    <Content Include="assets\images\skill\skill-img-3.jpg" />
+    <Content Include="assets\images\skill\skill-img-4.jpg" />
+    <Content Include="assets\images\team\team-1.jpg" />
+    <Content Include="assets\images\team\team-2.jpg" />
+    <Content Include="assets\images\team\team-3.jpg" />
+    <Content Include="assets\images\team\team-4.jpg" />
+    <Content Include="assets\images\team\team-5.jpg" />
+    <Content Include="assets\images\team\team-6.jpg" />
+    <Content Include="assets\images\team\team-7.jpg" />
+    <Content Include="assets\images\team\team-8.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template.html" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\ab-shape.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\about-1.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\about-2.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\about-sm-5.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\all.min.css" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\aos.css" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\bootstrap.min.css" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\brand-1.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\brand-2.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\brand-3.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\brand-4.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\brand-5.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\features-1.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\features-10.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\features-11.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\features-2.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\features-3.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\features-6.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\features-7.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\features-8.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\features-9.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\flaticon.css" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\hero-4.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\hero-shape-4.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\l-blog-1.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\l-blog-2.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\l-blog-3.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\logo-white.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\logo.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\magnific-popup.css" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\quote-2.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\shop-cart-1.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\shop-cart-2.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\shop-cart-3.jpg" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\sign-2.png" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\style.css" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\swiper-bundle.min.css" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\testi-5.png" />
+    <Content Include="assets\images\testi-1.jpg" />
+    <Content Include="assets\images\testimonial\quote-2.png" />
+    <Content Include="assets\images\testimonial\quote.png" />
+    <Content Include="assets\images\testimonial\testi-2.jpg" />
+    <Content Include="assets\images\testimonial\testi-5.png" />
+    <Content Include="assets\images\testimonial\testimonial-3.jpg" />
+    <Content Include="assets\images\testimonial\testimonial-4.jpg" />
+    <Content Include="assets\images\video-img.jpg" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\plugins\aos.js" />
+    <Content Include="assets\js\plugins\appear.min.js" />
+    <Content Include="assets\js\plugins\back-to-top.js" />
+    <Content Include="assets\js\plugins\bootstrap.min.js" />
+    <Content Include="assets\js\plugins\jquery.counterup.min.js" />
+    <Content Include="assets\js\plugins\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\plugins\popper.min.js" />
+    <Content Include="assets\js\plugins\swiper-bundle.min.js" />
+    <Content Include="assets\js\plugins\waypoints.min.js" />
+    <Content Include="assets\js\vendor\jquery-1.12.4.min.js" />
+    <Content Include="assets\js\vendor\modernizr-3.11.2.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="assets\css\vendor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewState.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\.DS_Store" />
+    <Content Include="assets\css\.DS_Store" />
+    <Content Include="assets\fonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\flaticon.eot" />
+    <Content Include="assets\fonts\flaticon.ttf" />
+    <Content Include="assets\fonts\flaticon.woff" />
+    <Content Include="assets\fonts\flaticon.woff2" />
+    <Content Include="assets\images\.DS_Store" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\aos.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\appear.min.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\back-to-top.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\bootstrap.min.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\jquery-1.12.4.min.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\jquery.counterup.min.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\jquery.magnific-popup.min.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\main.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\modernizr-3.11.2.min.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\popper.min.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\swiper-bundle.min.js.download" />
+    <Content Include="assets\images\Techmax - Technology IT Solutions Consultancy HTML5 Template_files\waypoints.min.js.download" />
+    <Content Include="assets\js\.DS_Store" />
+    <Content Include="assets\php\contact-mail.php" />
+    <Content Include="assets\php\evaluation-mail.php" />
+    <Content Include="assets\scss\.DS_Store" />
+    <Content Include="assets\scss\elements\_button.scss" />
+    <Content Include="assets\scss\elements\_form.scss" />
+    <Content Include="assets\scss\header\_header-bottom.scss" />
+    <Content Include="assets\scss\header\_header-top.scss" />
+    <Content Include="assets\scss\header\_offcanvas.scss" />
+    <Content Include="assets\scss\pages\_about.scss" />
+    <Content Include="assets\scss\pages\_blog-details.scss" />
+    <Content Include="assets\scss\pages\_blog-standard.scss" />
+    <Content Include="assets\scss\pages\_blog.scss" />
+    <Content Include="assets\scss\pages\_brand.scss" />
+    <Content Include="assets\scss\pages\_case-study.scss" />
+    <Content Include="assets\scss\pages\_contact.scss" />
+    <Content Include="assets\scss\pages\_counter.scss" />
+    <Content Include="assets\scss\pages\_cta.scss" />
+    <Content Include="assets\scss\pages\_faq.scss" />
+    <Content Include="assets\scss\pages\_features.scss" />
+    <Content Include="assets\scss\pages\_hero.scss" />
+    <Content Include="assets\scss\pages\_login-register.scss" />
+    <Content Include="assets\scss\pages\_overview.scss" />
+    <Content Include="assets\scss\pages\_page-banner.scss" />
+    <Content Include="assets\scss\pages\_pricing.scss" />
+    <Content Include="assets\scss\pages\_service.scss" />
+    <Content Include="assets\scss\pages\_skill.scss" />
+    <Content Include="assets\scss\pages\_subscribe.scss" />
+    <Content Include="assets\scss\pages\_team.scss" />
+    <Content Include="assets\scss\pages\_testimonial.scss" />
+    <Content Include="assets\scss\pages\_video.scss" />
+    <Content Include="assets\scss\style.scss" />
+    <Content Include="assets\scss\widget\_footer.scss" />
+    <Content Include="assets\scss\widget\_sidebar.scss" />
+    <Content Include="assets\scss\_common.scss" />
+    <Content Include="assets\scss\_elements.scss" />
+    <Content Include="assets\scss\_footer.scss" />
+    <Content Include="assets\scss\_header.scss" />
+    <Content Include="assets\scss\_pages.scss" />
+    <Content Include="assets\scss\_variables.scss" />
+    <Content Include="assets\scss\_widget.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_topMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Contact.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56411/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,145 @@
+/*--
+/*  13 - Brand CSS
+/*----------------------------------------*/
+
+// Brand Wrapper 
+.brand-wrapper{
+          
+}
+
+// Brand Title
+.brand-title{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: $heading-font;
+    color: #717171;
+    margin-top: -7px;
+    @media #{$small-mobile}{
+        font-size: 20px;
+    }
+
+    & span{
+        color: $primary;
+        font-weight: 700;
+    }
+}
+
+// Brand Active
+.brand-active{
+    max-width: 1070px;
+    width: 100%;
+    margin: 45px auto 0;
+}
+
+
+// Home Style Two
+
+.brand-section-2 {
+
+    & .brand-wrapper-2 {
+        background: $white;
+        box-shadow: 0px 0px 144px 0px rgba(0, 0, 0, 0.04);
+        border-radius: 10px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+        margin-bottom: -150px;
+        z-index: 1;
+    }
+}
+
+// Home Style Three
+
+.brand-section-3 {
+
+    & .brand-wrapper {
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 120px;
+        @media #{$desktop-device} {
+            padding-bottom: 100px;
+        }
+        @media #{$tablet-device} {
+            padding-bottom: 80px;
+        }
+        @media #{$large-mobile} {
+            padding-bottom: 60px;
+        }
+        & .brand-title {
+
+            & span {
+                color: $primary-2;
+            }
+        }
+    }
+}
+
+// Home Style Four
+
+.brand-section-4 {
+    background: #fbfbfc;
+}
+
+// Home Style Nine
+
+.brand-section-5 {
+
+    & .brand-wrapper-2 {
+        margin-bottom: 0;
+    }
+}
+
+// Home Style Ten
+.brand-section-6 {
+    background: #0b0f20;
+
+    & .section-title2{
+        margin-bottom: 50px;
+    
+        & .title{
+            text-transform: uppercase;
+        }
+        
+    }
+
+    & .brand-wrap {
+        position: relative;
+        padding-top: 20px;
+
+
+        &::before {
+            content: "";
+            background: #3c3f4d;
+            width: 100%;
+            margin: auto;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            @media #{$tablet-device} {
+                display: none;
+            }
+        }
+        & .brand-item-box {
+            border-right: 1px solid #3c3f4d;
+            @media #{$tablet-device} {
+                border-right: 0;
+            }
+
+            & .brand-logo {
+                padding: 45px 0;
+                @media #{$tablet-device} {
+                    padding: 35px 0;
+                }
+            }
+
+            &.brand-box-4 {
+                border-right: 0;
+            }
+
+        }
+    }
+    
+    
+}
+

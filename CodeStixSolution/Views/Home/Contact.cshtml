@@ -1,0 +1,149 @@
+﻿@model CodeStixSolution.Models.GeneralModol
+@using CodeStixSolution.DAL;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+ <!-- Page Banner Start -->
+        <div class="section" style="background-image: url(~/assets/images/page-banner.jpg);">
+            <div class="shape-2"></div>
+            <div class="container">
+                <div class="page-banner-wrap">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Page Banner Content Start -->
+                            <div class="page-banner text-center">
+                                <h2 class="title">Contact Us</h2>
+                                <ul class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a href='@Url.Content("~/")'>Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                                </ul>
+                            </div>
+                            <!-- Page Banner Content End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Banner End -->
+
+
+
+        <!-- Contact Info Start -->
+        <div class="section contact-info-section section-padding-02">
+            <div class="container">
+                <!-- Contact Info Wrap Start -->
+                <div class="contact-info-wrap">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <!--Single Contact Info Start -->
+                            <div class="single-contact-info text-center">
+                                <div class="info-icon">
+                                    <i class="flaticon-phone-call"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h5 class="title">Telephone</h5>
+                                    <p>+91-9419616168</p>
+                                    <p>+91-9419616130</p>
+                                </div>
+                            </div>
+                            <!--Single Contact Info End -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <!--Single Contact Info Start -->
+                            <div class="single-contact-info text-center">
+                                <div class="info-icon">
+                                    <i class="flaticon-email"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h5 class="title">Mail Address</h5>
+                                    <p>info@codestix.com</p>
+                                </div>
+                            </div>
+                            <!--Single Contact Info End -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <!--Single Contact Info Start -->
+                            <div class="single-contact-info text-center">
+                                <div class="info-icon">
+                                    <i class="flaticon-pin"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h5 class="title">Location</h5>
+                                    <p>Natipora, Srinagar, Jammu and Kashmir, 190015</p>
+                                </div>
+                            </div>
+                            <!--Single Contact Info End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Info Wrap End -->
+            </div>
+        </div>
+        <!-- Contact Info End -->
+
+        <!-- Contact Form Start -->
+        <div class="section contact-form-section section-padding" style="visibility:hidden; display:none">
+            <div class="container">
+                <!-- Contact Wrap Start -->
+                <div class="contact-wrap">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="form-title text-center">
+                                <h2 class="title">Get Support from our Team</h2>
+                            </div>
+                            <!-- Contact Form Wrap Start -->
+                            <div class="contact-form-wrap">
+                                 @using (Html.BeginForm("Feedback", "Home", FormMethod.Post, new { @class = "form-validate form-horizontal", id = "register-form" }))
+                                {
+                                    <p class="input-block">
+                                        Name: 
+                                   @Html.TextBoxFor(m => m.CommentBTO.CommenterName, new { id = "txtCommenterName", @class = "required input-block-level", @required = "required" })
+                                        @Html.ValidationMessageFor(m => m.CommentBTO.CommenterName)
+
+                                    </p>
+                                    <p class="input-block">
+                                        Email:
+                                        @Html.TextBoxFor(m => m.CommentBTO.Email, new { id = "txtEmail", @class = "validate-email required input-block-level invalid",  @required = "required" })
+                                        @Html.ValidationMessageFor(m => m.CommentBTO.Email)
+
+                                    </p>
+                                    <p class="input-block">
+                                        Mobile No:
+                                    @Html.TextBoxFor(m => m.CommentBTO.PhoneNumber, new { id = "txtMobileNo", @class = "required input-block-level", @required = "required" })
+                                        @Html.ValidationMessageFor(m => m.CommentBTO.PhoneNumber)
+                                         
+                                    </p>
+                                    <p class="textarea-block">
+                                        Requirement Description:
+                                      @Html.TextAreaFor(m => m.CommentBTO.Comments, new { id = "txtComments", @class = "required input-block-level", @cols = "50", @rows = "10", @required = "required" })
+                                        @Html.ValidationMessageFor(m => m.CommentBTO.Comments)
+                                    </p>
+                                    <div class="button-wrapper">
+                                        <p class="send-message">
+                                            <a href="#" type="submit" class="link">
+                                                <input type="submit" class="btn" value="Send Message" id="contactUsId" /></a>
+                                        </p>
+                                    </div>
+                                }
+                                
+                            </div>
+                            <!-- Contact Form Wrap End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Wrap End -->
+            </div>
+        </div>
+        <!-- Contact Form End -->
+
+        <!-- Contact Map Start -->
+        <div class="section contact-map-section">
+            <div class="contact-map-wrap">
+                <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=New%20York%20University%20&t=m&z=10&output=embed&iwloc=near" title="New York University" aria-label="New York University" frameborder="0"></iframe>
+            </div>
+        </div>
+        <!-- Contact Map End -->

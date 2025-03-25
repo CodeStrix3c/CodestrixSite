@@ -1,0 +1,237 @@
+/*--
+/*  15 - Video CSS
+/*----------------------------------------*/
+
+.video-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @media #{$desktop-device} {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @media #{$tablet-device} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media #{$large-mobile} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    & .video-wrap {
+
+        & .video-content{
+            
+            & .title {
+                font-size: 48px;
+                line-height: 60px;
+                color: $white;
+                @media #{$desktop-device} {
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+                @media #{$large-mobile} {
+                    font-size: 28px;
+                    line-height: 40px;
+                }
+            }
+            & .video-play {
+                margin-top: 40px;
+                & a {
+
+                    & i {
+                        width: 100px;
+                        height: 100px;
+                        background: $primary;
+                        display: inline-block;
+                        line-height: 100px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: $white;
+                        border-radius: 50%;
+                        transition: $transition-default;
+                        @media #{$tablet-device} {
+                            width: 80px;
+                            height: 80px;
+                            line-height: 80px;
+                        }
+
+                        &:hover {
+                            background: $white;
+                            color: $primary;
+                        }
+                    }
+
+                    & span {
+                        font-size: 22px;
+                        line-height: 30px;
+                        font-family: $heading-font;
+                        font-weight: 700;
+                        color: $white;
+                        display: block;
+                        margin-top: 15px;
+                        @media #{$large-mobile} {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Home Style Eight
+
+.video-section-02 {
+    background: #051543;
+    position: relative;
+    padding-bottom: 120px;
+    z-index: 1;
+
+    & .shape-1 {
+        position: absolute;
+        left: 150px;
+        top: 105px;
+        animation: round-02 4s linear infinite;
+        z-index: -1;
+    }
+
+    & .shape-2 {
+        position: absolute;
+        left: 35px;
+        bottom: 120px;
+        animation: round-02 4s linear infinite;
+        z-index: -1;
+    }
+
+    & .shape-3 {
+        position: absolute;
+        top: 80px;
+        right: 50px;
+        animation: round-02 4s linear infinite;
+        z-index: -1;
+    }
+
+    & .video-left {
+        padding-top: 40px;
+
+        & .video-content {
+            padding-right: 135px;
+
+            & img {
+                margin-top: 35px;
+            }
+
+            & p {
+                font-size: 16px;
+                line-height: 30px;
+                font-family: $heading-font;
+                font-weight: 400;
+                color: $white;
+                margin-top: 15px;
+
+                & span {
+                    font-weight: 700;
+                }
+            }
+
+            & .learn-more {
+                font-size: 12px;
+                line-height: 24px;
+                font-family: $heading-font;
+                font-weight: 600;
+                color: $white;
+                margin-top: 20px;
+
+                & i {
+                    color: #6754e2;
+                    margin-left: 2px;
+                }
+
+                &:hover {
+                    color: #6754e2;
+                }
+            }
+        }
+    }
+
+    & .video-right {
+
+        & .video-img {
+            position: relative;
+    
+            & img {
+                width: 100%;
+                border-radius: 14px;
+            }
+            & .play-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                & a {
+                    width: 85px;
+                    height: 85px;
+                    line-height: 85px;
+                    font-size: 15px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: $white;
+                    color: #6754e2;
+                    transition: $transition-default;
+                    @media #{$large-mobile} {
+                        width: 85px;
+                        height: 85px;
+                        line-height: 85px;
+                    }
+    
+                    &:hover {
+                        background: #6754e2;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.video-section-02 {
+    @media #{$desktop-device} {
+
+        & .shape-2 {
+            bottom: 50px;
+        }
+
+        & .video-left {
+    
+            & .video-content {
+                padding-right: 0px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+
+        & .shape-1 {
+            top: 60px;
+        }
+
+        & .shape-3 {
+            top: 205px;
+            right: 35px;
+        }
+
+        & .video-right {
+            margin-top: 50px;
+        }
+    }
+    @media #{$small-mobile} {
+        & .shape-3 {
+            width: 150px;
+            top: 235px;
+            right: 0;
+        }
+    }
+}

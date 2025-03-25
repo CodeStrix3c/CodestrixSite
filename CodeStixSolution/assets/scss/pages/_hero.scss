@@ -1,0 +1,1892 @@
+/*--
+/*  03 - Hero CSS
+/*----------------------------------------*/
+
+// Tech Hero Section
+.tech-hero-section {
+    height: 1120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    z-index: 1;
+
+    & .shape-1 {
+        width: 417px;
+        height: 417px;
+        background: linear-gradient(150deg, rgba(3,92,221,1) 0%, rgba(78,205,234,1) 100%);
+        opacity: 0.9;
+        border-radius: 50%;
+        position: absolute;
+        top: 115px;
+        left: 50px;
+        z-index: -1;
+    }
+
+    & .hero-content {
+        padding-top: 290px;
+        max-width: 520px;
+        
+        & .sub-title {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $white;
+        }
+
+        & .title {
+            font-size: 72px;
+            line-height: 92px;
+            font-weight: 700;
+            color: $white;
+            margin-top: 10px;
+        }
+
+        & p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 600;
+            color: $white;
+            margin-top: 25px;
+        }
+
+        & .hero-btn {
+            margin-top: 40px;
+            & .btn {
+        
+            }
+        }
+    }
+}
+  
+.tech-hero-section {
+    @media #{$laptop-device} {
+        height: 920px;
+    }
+    @media #{$desktop-device} {
+        height: 920px;
+
+        & .shape-1 {
+            width: 350px;
+            height: 350px;
+            top: 115px;
+            left: 170px;
+        }
+
+        & .hero-content {
+            padding-top: 250px;
+
+            & .title {
+                font-size: 55px;
+                line-height: 72px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        height: 780px;
+
+        & .hero-content {
+            padding-top: 170px;
+        }
+    }
+    @media #{$large-mobile} {
+        & .shape-1 {
+            width: 250px;
+            height: 250px;
+            left: 30px;
+        }
+
+        & .hero-content {
+
+            & .title {
+                font-size: 48px;
+                line-height: 62px;
+            }
+            & .hero-btn {
+                & .btn {
+                    padding: 0 45px;
+                }
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .hero-content {
+            & .sub-title {
+                font-size: 14px;
+                line-height: 26px;
+            }
+            & .title {
+                font-size: 36px;
+                line-height: 48px;
+            }
+            & p {
+                font-size: 16px
+            }
+        }
+    }
+}
+
+// Home Style Two
+
+.tech-hero-section-2 {
+    height: 955px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #00213a;
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    & .shape-1 {
+        width: 578px;
+        height: 315px;
+        background-image: linear-gradient( 290deg, rgb(84,214,235) 0%, rgb(3,92,221) 100%);
+        transform: skewY(15deg);
+        position: absolute;
+        left: 7.5%;
+        top: 25%;
+        z-index: -1;
+    }
+    & .shape-2 {
+        width: 578px;
+        height: 315px;
+        background-image: linear-gradient( 290deg, rgb(84,214,235) 0%, rgb(3,92,221) 100%);
+        transform: skewY(15deg);
+        position: absolute;
+        left: 3.5%;
+        top: 50%;
+        z-index: -1;
+    }
+    & .shape-3 {
+        width: 578px;
+        height: 315px;
+        background: $white;
+        opacity: 0.2;
+        transform: skewY(15deg);
+        position: absolute;
+        left: 12%;
+        top: 40%;
+        z-index: -1;
+    }
+    & .shape-4 {
+        width: 578px;
+        height: 315px;
+        background: linear-gradient(90deg, rgb(84,214,235) 0%, rgb(3,92,221) 100%);
+        opacity: 0.8;
+        transform: skewY(15deg);
+        position: absolute;
+        right: -10%;
+        top: 76%;
+        z-index: -1;
+    }
+    & .shape-5 {
+        width: 358px;
+        height: 195px;
+        background: linear-gradient( 280deg, rgb(84,214,235) 0%, rgb(3,92,221) 100%);
+        opacity: 0.8;
+        transform: skewY(15deg);
+        position: absolute;
+        right: -6%;
+        top: 67%;
+        z-index: -1;
+    }
+
+    & .hero-content {
+        max-width: 630px;
+        & .sub-title {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $white;
+        }
+
+        & .title {
+            font-size: 60px;
+            line-height: 78px;
+            font-weight: 700;
+            color: $white;
+            margin-top: 10px;
+        }
+
+        & .hero-btn {
+            margin-top: 40px;
+            & .btn {
+        
+            }
+        }
+    }
+}
+
+.tech-hero-section-2 {
+    @media #{$desktop-device} {
+        & .shape-1 {
+            width: 450px;
+            height: 250px;
+        }
+        & .shape-2 {
+            width: 450px;
+            height: 250px;
+            top: 46%;
+        }
+        & .shape-3 {
+            width: 450px;
+            height: 250px;
+        }
+        & .shape-4 {
+            width: 450px;
+            height: 250px;
+            top: 81%;
+        }
+        & .shape-5 {
+            width: 250px;
+            height: 180px;
+            top: 71%;
+            right: -5%;
+        }
+
+        & .hero-content {
+    
+            & .title {
+                font-size: 48px;
+                line-height: 60px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        height: 760px;
+    }
+    @media #{$large-mobile} {
+        height: 660px;
+
+        & .shape-1 {
+            width: 350px;
+            height: 190px;
+        }
+        & .shape-2 {
+            width: 350px;
+            height: 190px;
+            top: 46%;
+        }
+        & .shape-3 {
+            width: 350px;
+            height: 190px;
+            top: 37%;
+        }
+        & .shape-4 {
+            width: 350px;
+            height: 190px;
+        }
+        & .shape-5 {
+            width: 220px;
+            height: 150px;
+            top: 71%;
+            right: -5%;
+        }
+        & .hero-content {
+            & .sub-title {
+                font-size: 14px;
+                line-height: 28px;
+            }
+    
+            & .title {
+                font-size: 40px;
+                line-height: 52px;
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        height: 660px;
+
+        & .shape-1 {
+            width: 350px;
+            height: 190px;
+        }
+        & .shape-2 {
+            width: 350px;
+            height: 190px;
+            top: 46%;
+        }
+        & .shape-3 {
+            width: 350px;
+            height: 190px;
+            top: 37%;
+        }
+        & .shape-4 {
+            display: none;
+        }
+        & .shape-5 {
+            display: none;
+        }
+        & .hero-content {
+            & .title {
+                font-size: 32px;
+                line-height: 46px;
+            }
+        }
+    }
+}
+
+// Home Style Three
+
+.tech-hero-section-3 {
+    padding-top: 240px;
+    padding-bottom: 135px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    & .hero-content {
+        max-width: 580px;
+        & .sub-title {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $white;
+        }
+
+        & .title {
+            font-size: 72px;
+            line-height: 92px;
+            font-weight: 700;
+            color: $white;
+            margin-top: 10px;
+        }
+
+        & .btn {
+            margin-top: 55px;
+        }
+        & .hero-play-btn {
+            margin-top: 80px;
+            & .play-btn {
+
+                & i {
+                    width: 70px;
+                    height: 70px;
+                    background: transparent;
+                    display: inline-block;
+                    line-height: 70px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #ffffff;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                    &:hover {
+                        color: $primary-2;
+                    }
+                }
+                & span {
+                    font-size: 22px;
+                    font-family: $heading-font;
+                    font-weight: 700;
+                    color: $white;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    & .hero-form {
+        background: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 460px;
+        
+        & .hero-form-wrap {
+            padding: 45px;
+            box-shadow: 0px 0px 40px 0px rgba(49, 48, 48, 0.81);
+            & .heading-wrap {
+                margin-bottom: 5px;
+                & .title {
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #3c424c;
+                }
+            }
+
+            & .single-form {
+                margin-top: 20px;
+                & input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]) {
+                    background: #f0f0f0;
+                    height: 55px;
+                    line-height: 55px;
+                    border: 0;
+                    padding-left: 15px;
+
+                    @include placeholder{
+                        opacity: 0.95;
+                        font-size: 14px;
+                        color: #686f7a;
+                        font-family: $heading-font;
+                        font-weight: 600;
+                    }
+                }
+
+                & textarea {
+                    height: 90px;
+                    background: #f0f0f0;
+                    border: 0;
+                    padding-left: 15px;
+                    resize: none;
+
+                    @include placeholder{
+                        opacity: 0.95;
+                        font-size: 14px;
+                        color: #686f7a;
+                        font-family: $heading-font;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            & .form-btn {
+                margin-top: 20px;
+                & .btn {
+                    font-size: 16px;
+                    width: 100%;
+                    height: 50px;
+                    line-height: 46px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+ 
+.tech-hero-section-3 {
+    @media #{$desktop-device} {
+        padding-top: 210px;
+        padding-bottom: 110px;
+
+        & .hero-content {
+    
+            & .title {
+                font-size: 55px;
+                line-height: 70px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        padding-top: 190px;
+        & .hero-content {
+            & .title {
+                font-size: 48px;
+                line-height: 60px;
+            }
+        }
+        & .hero-form  {
+            max-width: 100%;
+            margin-top: 60px;
+        }
+    }
+    @media #{$large-mobile} {
+        padding-top: 170px;
+        padding-bottom: 80px;
+        & .hero-content {
+            & .sub-title {
+                font-size: 15px;
+                line-height: 28px;
+            }
+    
+            & .hero-play-btn {
+
+                & .play-btn {
+    
+                    & i {
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                    }
+                    & span {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        & .hero-form {
+            
+            & .hero-form-wrap {
+                & .heading-wrap {
+                    & .title {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .hero-content {
+    
+            & .title {
+                font-size: 35px;
+                line-height: 48px;
+            }
+        }
+        & .hero-form {
+            
+            & .hero-form-wrap {
+                & .heading-wrap {
+                    & .title {
+                        font-size: 22px;
+                    }
+                }
+    
+                & .form-btn {
+                    & .btn {
+                        padding: 0 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Home Style Four
+
+.tech-hero-section-4 {
+    padding-top: 85px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    & .hero-content {
+        padding-top: 155px;
+        max-width: 550px;
+
+        & .sub-title {
+            font-size: 14px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 800;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            height: 40px;
+            line-height: 38px;
+            background: #252239;
+            padding: 0 25px;
+            display: inline-block;
+            border-radius: 35px;
+            margin-bottom: 10px;
+        }
+        & .title {
+            font-size: 72px;
+            line-height: 92px;
+            color: $white;
+        }
+        & p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 600;
+            color: $white;
+            margin-top: 25px;
+        }
+        & .btn {
+            margin-top: 50px;
+        }
+    }
+
+    & .hero-images {
+        padding-top: 50px;
+        text-align: center;
+        position: relative;
+
+        & .shape-1 {
+            position: absolute;
+            top: 75px;
+            left: -15px;
+            animation: rotate-style 50s linear infinite;
+        }
+
+        & .images {
+            position: relative;
+            bottom: -30px;
+        }
+    }
+}
+
+
+.tech-hero-section-4 {
+
+    @media #{$desktop-device} {
+        & .hero-content {
+            & .title {
+                font-size: 55px;
+                line-height: 72px;
+            }
+        }
+        & .hero-images {
+    
+            & .images {
+                padding: 0 35px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        & .hero-content {
+            padding-top: 110px;
+    
+            & .sub-title {
+                font-size: 12px;
+                padding: 0 20px;
+            }
+            & .title {
+                font-size: 45px;
+                line-height: 60px;
+            }
+        } 
+        & .hero-images {
+    
+            & .images {
+                padding: 0 0px;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        & .hero-content {
+            padding-top: 80px;
+        }
+        & .hero-images {
+    
+            & .shape-1 {
+                left: 0;
+            }
+    
+            & .images {
+                padding: 0 20px;
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .hero-content {
+    
+            & .title {
+                font-size: 35px;
+                line-height: 48px;
+            }
+        }
+    }
+}
+
+
+// Home Style Five
+
+.tech-hero-section-5 {
+    height: 960px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    & .shape-1 {
+        position: absolute;
+        left: 0;
+        top: 15px;
+        z-index: -1;
+    }
+    & .shape-2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    & .hero-content {
+        max-width: 880px;
+        margin: 0 auto;
+        padding-top: 60px;
+        
+
+        & .sub-title {
+            font-size: 16px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 800;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        & .title {
+            font-size: 72px;
+            line-height: 92px;
+            color: $white;
+        }
+        & p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 600;
+            color: $white;
+            margin-top: 25px;
+        }
+        & .btn {
+            margin-top: 45px;
+        }
+    }
+}
+
+.tech-hero-section-5 {
+    @media #{$desktop-device} {
+        height: 860px;
+
+        & .shape-1 {
+
+            & img {
+                width: 80%;
+            }
+        }
+        & .shape-2 {
+            right: -140px;
+    
+            & img {
+                width: 80%;
+            }
+        }
+        & .hero-content {
+            
+            & .title {
+                font-size: 55px;
+                line-height: 72px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        height: 760px;
+
+        & .hero-content {
+
+            & .title {
+                font-size: 45px;
+                line-height: 60px;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        height: 660px;
+
+        & .shape-1 {
+    
+            & img {
+                width: 60%;
+            }
+        }
+        & .shape-2 {
+            right: -280px;
+    
+            & img {
+                width: 60%;
+            }
+        }
+        & .hero-content {
+    
+            & .title {
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .hero-content {
+            
+            & .sub-title {
+                font-size: 16px;
+            }
+            & .title {
+                font-size: 35px;
+                line-height: 48px;
+            }
+        }
+    }
+}
+
+// Home Style Six
+
+.tech-hero-section-6 {
+    padding-top: 85px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient( -55deg, rgb(84,214,235) 0%, rgb(3,92,221) 100%);
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    & .hero-content {
+        padding-top: 140px;
+        max-width: 620px;
+
+        & .sub-title {
+            font-size: 16px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 800;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        & .title {
+            font-size: 72px;
+            line-height: 92px;
+            color: $white;
+        }
+        & p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 600;
+            color: $white;
+            margin-top: 25px;
+            padding-right: 35px;
+        }
+        & .btn {
+            margin-top: 50px;
+        }
+    }
+
+    & .hero-images {
+        padding-top: 125px;
+        text-align: right;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient( -40deg, rgb(84,214,235) 0%, rgb(3,92,221) 100%);
+            opacity: 0.9;
+            width: 650px;
+            height: 650px;
+            border-radius: 50%;
+            transform: translate(-35px, 40px);
+            z-index: -1; 
+            animation: animate-02 9s linear infinite;
+        }
+    }
+}
+
+
+.tech-hero-section-6 {
+    @media #{$laptop-device} {
+        & .hero-content {
+            & .title {
+                font-size: 60px;
+                line-height: 80px;
+            }
+        }
+    }
+    @media #{$desktop-device} {
+        & .hero-content {
+            padding-top: 110px;
+    
+            & .title {
+                font-size: 55px;
+                line-height: 72px;
+            }
+        }
+        & .hero-images {
+    
+            &::before {
+                width: 480px;
+                height: 480px;
+                transform: translate(-30px, 80px);
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        & .hero-content {
+            padding-top: 70px;
+    
+            & .sub-title {
+                font-size: 14px;
+            }
+            & .title {
+                font-size: 40px;
+                line-height: 55px;
+            }
+            & p {
+                font-size: 14px;
+                padding-right: 0;
+            }
+        }
+        & .hero-images {
+    
+            &::before {
+                width: 380px;
+                height: 380px;
+                transform: translate(-25px, 80px);
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        & .hero-content {
+    
+            & p {
+                font-size: 16px;
+            }
+        }
+        & .hero-images {
+    
+            &::before {
+                width: 430px;
+                height: 430px;
+                transform: translate(5px, 80px);
+            }
+    
+    
+            & .images {
+                padding: 0 50px;
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .hero-content {
+            & .title {
+                font-size: 35px;
+                line-height: 48px;
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .hero-images {
+            padding-top: 90px;
+    
+            &::before {
+                width: 350px;
+                height: 350px;
+                transform: translate(-10px, 60px);
+            }
+    
+            & .images {
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+// Home Style Seven
+  
+.tech-hero-section-7 {
+    height: 980px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+
+    & .shape-1 {
+        position: absolute;
+        left: -9%;
+        bottom: -36%;
+        z-index: -1;
+    }
+
+
+    & .hero-content {
+        max-width: 640px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 80px;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            border: 5px solid $white;
+            width: 625px;
+            height: 570px;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        & .shape-2 {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(150deg, #035cdd 0%, #4ecdea 100%);
+            border-radius: 50%;
+            position: absolute;
+            top: -75px;
+            right: -50px;
+            animation: zoom-in-out 4s infinite;
+            z-index: -1;
+        }
+        
+        & .title {
+            font-size: 110px;
+            line-height: 1;
+            font-weight: 800;
+            color: $white;
+        }
+
+        & p {
+            font-size: 36px;
+            line-height: 48px;
+            font-family: $heading-font;
+            font-weight: 400;
+            color: $white;
+            margin-top: 25px;
+        }
+        & .btn {
+            margin-top: 45px;
+        }
+    }
+}
+
+.tech-hero-section-7 {
+    @media #{$laptop-device} {
+
+        & .shape-1 {
+            left: -38%;
+            bottom: -36%;
+        }
+    }
+    @media #{$desktop-device} {
+        height: 880px;
+
+        & .shape-1 {
+            left: -21%;
+            bottom: -28%;
+
+            & img {
+                width: 750px;
+            }
+        }
+        & .hero-content {
+
+    
+            &::after {
+                width: 570px;
+                height: 530px;
+            }
+    
+            & .shape-2 {
+                width: 120px;
+                height: 120px;
+                top: -60px;
+                right: -30px;
+            }
+            
+            & .title {
+                font-size: 90px;
+            }
+
+            & p {
+                font-size: 30px;
+                line-height: 42px;
+            }
+
+        }
+    }
+    @media #{$tablet-device} {
+        height: 780px;
+
+        & .shape-1 {
+            left: -21%;
+            bottom: -28%;
+
+            & img {
+                width: 620px;
+            }
+        }
+
+        & .hero-content {
+
+    
+            &::after {
+                width: 540px;
+                height: 520px;
+            }
+
+        }
+    }
+    @media #{$large-mobile} {
+        height: 680px;
+
+        & .hero-content {
+            padding-top: 60px;
+    
+            &::after {
+                width: 440px;
+                height: 450px;
+            }
+    
+            & .shape-2 {
+                width: 100px;
+                height: 100px;
+                top: -50px;
+                right: -10px;
+            }
+            
+            & .title {
+                font-size: 75px;
+            }
+
+            & p {
+                font-size: 25px;
+                line-height: 38px;
+            }
+
+        }
+    }
+    @media #{$small-mobile} {
+        height: 660px;
+
+        & .shape-1 {
+            left: -34%;
+            bottom: -25%;
+
+            & img {
+                width: 510px;
+            }
+        }
+
+        & .hero-content {
+            padding-top: 45px;
+    
+            &::after {
+                width: 380px;
+                height: 405px;
+            }
+            
+            & .title {
+                font-size: 65px;
+            }
+
+            & p {
+                font-size: 25px;
+                line-height: 38px;
+            }
+
+        }
+    }
+    @media #{$extra-small-mobile} {
+
+        & .shape-1 {
+
+            & img {
+                width: 460px;
+            }
+        }
+
+        & .hero-content {
+    
+            &::after {
+                width: 305px;
+                height: 385px;
+            }
+    
+            & .shape-2 {
+                width: 80px;
+                height: 80px;
+                right: -5px;
+            }
+            
+            & .title {
+                font-size: 55px;
+            }
+
+            & p {
+                font-size: 20px;
+                line-height: 32px;
+            }
+
+        }
+    }
+}
+
+
+// Home Style Eight
+.tech-hero-section-8 {
+    height: 900px;
+    padding-top: 85px;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+
+    & .shape-4 {
+        position: absolute;
+        right: 8%;
+        top: 3%;
+        z-index: -1;
+    }
+
+    & .shape-5 {
+        position: absolute;
+        left: 4%;
+        top: 21%;
+        animation: rotate-style 50s linear infinite;
+        z-index: -1;
+    }
+
+    & .shape-6 {
+        position: absolute;
+        left: -5%;
+        top: 56%;
+        z-index: -1;
+    }
+    
+    & .hero-content {
+        padding-top: 155px;
+        max-width: 560px;
+
+
+        & .title {
+            font-size: 72px;
+            line-height: 90px;
+            color: #051441;
+
+            & span {
+                color: #6754e2;
+            }
+        }
+        & p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 400;
+            color: $body-color;
+            padding-right: 60px;
+            margin-top: 25px;
+        }
+        & .btn {
+            margin-top: 50px;
+            background: #6754e2;
+            border: 2px solid #6754e2;
+            padding: 0 70px;
+
+            &:hover {
+                color: #6754e2;
+            }
+        }
+    }
+
+    & .hero-images {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 50px;
+        z-index: 1;
+
+        & .shape-1 {
+            position: absolute;
+            left: 21%;
+            bottom: 3%;
+            animation: up-down 5s infinite;
+        }
+
+        & .shape-2 {
+            position: absolute;
+            left: 46%;
+            bottom: 16%;
+            animation: round-02 4s linear infinite;
+        }
+
+        & .shape-3 {
+            position: absolute;
+            left: 12%;
+            top: 21%;
+            animation: round-02 4s linear infinite;
+        }
+
+
+        & .image {
+            padding-top: 170px;
+            padding-right: 80px;
+            padding-left: 30px;
+        }
+    }
+}
+
+.tech-hero-section-8  {
+    @media #{$laptop-device} {
+        height: 840px;
+
+        & .hero-content {
+    
+    
+            & .title {
+                font-size: 55px;
+                line-height: 72px;
+            }
+        }
+
+        & .hero-images {
+            padding-left: 0px;
+    
+    
+            & .image {
+                padding-right: 50px;
+                padding-left: 0;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        height: auto;
+        padding-bottom: 240px;
+
+        & .hero-content {
+            padding-top: 60px;
+        }
+
+        & .hero-images {
+            position: relative;
+            width: 100%;
+    
+            & .shape-1 {
+                bottom: -50%;
+            }
+
+            & .shape-2 {
+                left: 50%;
+                bottom: -35%;
+            }
+    
+            & .image {
+                padding-top: 70px;
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        padding-bottom: 180px;
+
+        & .shape-4 {
+
+            & img {
+                width: 180px;
+            }
+        }
+        & .hero-content {
+    
+    
+            & .title {
+                font-size: 42px;
+                line-height: 58px;
+
+            }
+            & p {
+                font-size: 16px;
+                padding-right: 0;
+            }
+
+        }
+
+        & .hero-images {
+    
+            & .shape-1 {
+
+                & img {
+                    width: 140px;
+                }
+            }
+    
+            & .shape-2 {
+
+                & img {
+                    width: 110px;
+                }
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .hero-images {
+    
+            & .image {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        padding-bottom: 150px;
+        & .hero-content {
+    
+            & .title {
+                font-size: 35px;
+                line-height: 50px;
+            }
+        }
+
+        & .hero-images {
+    
+            & .shape-1 {
+
+                & img {
+                    width: 110px;
+                }
+            }
+    
+        }
+    }
+}
+
+// Home Style Nine
+.tech-hero-section-9 {
+    background: #e4e1fb;
+    padding-top: 85px;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+
+    & .svg-shape {
+        position: absolute;
+        left: -10%;
+        bottom: -20%;
+        z-index: 2;
+
+        & svg {
+            fill: $white;
+        }
+    }
+
+    & .shape-1 {
+        position: absolute;
+        left: 5%;
+        top: 16%;
+        animation: rotate-style 50s linear infinite;
+        z-index: -1;
+    }
+
+    & .shape-2 {
+        position: absolute;
+        right: 8%;
+        top: 15%;
+        animation: zoom-in-out 4s infinite;
+        z-index: -1;
+    }
+
+    & .shape-3 {
+        position: absolute;
+        left: 42%;
+        bottom: 33%;
+        animation: round-02 4s linear infinite;
+        z-index: -1;
+    }
+
+    & .hero-content {
+        padding-top: 155px;
+        max-width: 505px;
+
+        & .sub-title {
+            font-size: 12px;
+            line-height: 24px;
+            font-family: $heading-font;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $primary;
+        }
+        & .title {
+            font-size: 60px;
+            line-height: 78px;
+            color: $black;
+            margin-top: 20px;
+        }
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 600;
+            color: $body-color;
+            margin-top: 30px;
+        }
+        & .btn {
+            margin-top: 50px;
+        }
+    }
+
+    & .hero-images {
+        padding-top: 115px;
+        padding-bottom: 300px;
+        text-align: center;
+
+
+        & .images {
+            animation: up-down 5s infinite;
+        }
+    }
+}
+
+.tech-hero-section-9 {
+    @media #{$desktop-device}  {
+        & .svg-shape {
+            left: -14%;
+            bottom: -32%;
+        }
+
+        & .hero-content {
+
+            & .title {
+                font-size: 52px;
+                line-height: 70px;
+            }
+        }
+
+        & .hero-images {
+            padding-bottom: 220px;
+        }
+    }
+    @media #{$tablet-device}  {
+        & .svg-shape {
+            left: -71%;
+            bottom: -18%;
+        }
+
+        & .shape-1 {
+            top: 7%;
+        }
+
+        & .shape-2 {
+            right: 15%;
+        }
+
+        & .shape-3 {
+            left: 81%;
+            bottom: 58%;
+        }
+
+        & .hero-content {
+            padding-top: 70px;
+        }
+
+        & .hero-images {
+            padding-top: 90px;
+            
+            & .images {
+                padding: 0 80px;
+            }
+        }
+    }
+    @media #{$large-mobile}  {
+        & .svg-shape {
+            left: -94%;
+            bottom: -22%;
+        }
+
+
+        & .shape-2 {
+            top: 11%;
+        }
+
+        & .hero-content {
+
+            & .title {
+                font-size: 42px;
+                line-height: 58px;
+            }
+        }
+
+        & .hero-images {
+            
+            & .images {
+                padding: 0 50px;
+            }
+        }
+    }
+    @media #{$small-mobile}  {
+        & .svg-shape {
+            left: -140%;
+            bottom: -21%;
+        }
+
+
+        & .hero-content {
+
+            & .title {
+                font-size: 35px;
+                line-height: 52px;
+            }
+        }
+
+        & .hero-images {
+            
+            & .images {
+                padding: 0 0;
+            }
+        }
+    }
+    @media #{$extra-small-mobile}  {
+        & .svg-shape {
+            bottom: -27%;
+            left: -120%;
+        }
+    }
+}
+
+// Home Style Ten
+
+.tech-hero-section-10 {
+    background: #0b0f20;
+    padding-top: 85px;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: center top;
+    z-index: 1;
+
+    
+    & .hero-content {
+        padding-top: 165px;
+        max-width: 560px;
+
+
+        & .title {
+            font-size: 70px;
+            line-height: 90px;
+            text-transform: uppercase;
+            color: $white;
+
+            & span {
+                color: $primary;
+            }
+        }
+        & p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: $heading-font;
+            font-weight: 400;
+            color: $white;
+            padding-right: 60px;
+            margin-top: 25px;
+        }
+        & .btn {
+            margin-top: 50px;
+            background: $primary;
+            border: 2px solid $primary;
+            padding: 0 70px;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    & .hero-images {
+        position: relative;
+        z-index: 1;
+
+        & .shape-1 {
+            position: absolute;
+            left: 100px;
+            top: 105px;
+            z-index: 1;
+        }
+
+        & .shape-2 {
+            position: absolute;
+            left: 130px;
+            top: 0;
+            animation: up-down 5s linear infinite;
+        }
+
+        & .image {
+            padding-top: 75px;
+            padding-bottom: 45px;  
+        }
+    }
+}
+
+.tech-hero-section-10 {
+    @media #{$desktop-device}  {
+
+        & .hero-content {
+            padding-top: 120px;
+    
+            & .title {
+                font-size: 52px;
+                line-height: 72px;
+            }
+        }
+
+        & .hero-images {
+    
+            & .shape-1 {
+                left: 35px;
+            }
+    
+            & .shape-2 {
+                left: 65px;
+            }
+        }
+    }
+    @media #{$tablet-device}  {
+        & .hero-content {
+            padding-top: 70px;
+        }
+
+        & .hero-images {
+    
+            & .shape-1 {
+                left: 100px;
+            }
+    
+            & .shape-2 {
+                left: 130px;
+            }
+
+            & .image {
+                padding-top: 55px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+    @media #{$large-mobile}  {
+        & .hero-content {
+            
+            & .title {
+                font-size: 42px;
+                line-height: 60px;
+            }
+
+            & p {
+                font-size: 16px;
+                padding-right: 0;
+            }
+        }
+
+        & .hero-images {
+    
+            & .shape-1 {
+                width: 310px;
+            }
+    
+            & .shape-2 {
+                width: 270px;
+            }
+        }
+    }
+    @media #{$small-mobile}  {
+        & .hero-content {
+            
+            & .title {
+                font-size: 36px;
+                line-height: 52px;
+            }
+        }
+
+        & .hero-images {
+
+            & .shape-1 {
+                width: 270px;
+                left: 30px;
+            }
+    
+            & .shape-2 {
+                width: 230px;
+                left: 60px;
+            }
+
+            & .image {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+@keyframes animate-02 {
+    0%, 100% {
+        border-radius: 50% 50% 50% 50% / 50% 35% 65% 50%;
+    }
+    34% {
+        border-radius: 50% 50% 35% 65% / 50% 50% 50% 50%;
+    }
+    50% {
+        border-radius: 50% 50% 50% 50% / 65% 50% 50% 35%;
+    }
+    67% {
+        border-radius: 35% 65% 50% 50% / 50% 50% 50% 50%;
+    }
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1);
+    }
+      50% {
+        transform: scale(0.85);
+    }
+      100% {
+        transform: scale(1);
+    }
+}
+  
+@keyframes up-down {
+    0% {
+        transform: translateY(25px);
+    }
+      50% {
+        transform: translateY(0px);
+    }
+      100% {
+        transform: translateY(25px);
+    }
+}
+
+@keyframes round-02 {
+
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
